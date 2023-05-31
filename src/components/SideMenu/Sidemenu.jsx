@@ -5,7 +5,6 @@ import { useGlobalContext } from "../../utils/Context";
 
 const Sidemenu = () => {
   const { sidemenu, activeLink, changeActiveLink } = useGlobalContext();
-    console.log(activeLink)
   return (
     <div
       className={

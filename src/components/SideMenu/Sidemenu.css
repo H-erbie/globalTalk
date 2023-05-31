@@ -2,7 +2,7 @@
 .sidemenu-container{
     display: none;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 800px) {
 
 .sidemenu-container{
     height: calc(100vh - 73px);

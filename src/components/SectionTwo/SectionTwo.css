@@ -57,7 +57,20 @@
         color: var(--cyan);
 
     }
-    @media screen and (max-width: 786px) {
+    @media (max-width: 976px) and (max-height: 550px) {
+        .section-two-left{
+            display: none;
+        }
+        .section-two-right{
+            gap: 0.5rem;
+            padding-top: 0;
+        }
+        .section-two{
+            padding-top: 40px;
+        }
+        
+    }
+    @media screen and (max-width: 800px) {
         .section-two{
             flex-direction: column;
             justify-content: center;
@@ -80,6 +93,7 @@
             margin: 2rem auto;
         }
     }
+
     @media screen and (max-width: 400px) {
         .card{
             padding: 1rem;
@@ -101,3 +115,5 @@
             width: 6rem;
         }
         }
+
+    

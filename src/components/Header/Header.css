@@ -103,10 +103,20 @@ color: var(--grey-dark);
     }
 }
 @media (max-width: 976px) and (max-height: 675px) {
+    .header-container{
+        justify-content: start;
+    }
+}
+@media (max-width: 976px) and (max-height: 550px) {
     .header-right{
         display: none;
     }
+    .header-left{
+        gap: 0.5rem;
+    }
+    
 }
+
 @media screen and (max-width: 330px) {
   .figures, .desc{
     font-size: 1rem;

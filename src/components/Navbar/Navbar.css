@@ -187,7 +187,7 @@
     z-index: 1;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 800px) {
     .divider, .nav-items, .sign-out{
         display: none;
     }
@@ -213,6 +213,7 @@
         right: -0.8rem;
         transition: var(--transition);
     }
+
     .user-info::before{
         content: '';
         position: absolute;

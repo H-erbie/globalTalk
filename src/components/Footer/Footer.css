@@ -56,7 +56,7 @@ cursor: pointer;
     display: flex;
     gap: 1rem;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 800px) {
     .footer-link-items, .users, .footer-right{
         flex-direction: column;
     }
