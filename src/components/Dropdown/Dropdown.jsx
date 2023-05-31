@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Dropdown.css";
 import { useGlobalContext } from "../../utils/Context";
-import { gamesDrop } from "../../utils/data";
 
 const Dropdown = () => {
   const { dropMenu, drop, position, activeLink, changeActiveLink } =
