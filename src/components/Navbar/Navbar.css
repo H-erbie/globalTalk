@@ -1,0 +1,241 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background-color: var(--grey-light);
+    border-bottom: 1px solid var(--grey-medium);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1rem;
+}
+.dropdown-icon{
+    width: 1.5rem;
+    font-size: 1.5rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--grey-dark);
+}
+.nav-link{
+    text-transform: capitalize;
+    color: var(--grey-dark);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.nav-link:hover{
+    color: var(--black);
+}
+.app-name{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.5rem;
+}
+.nav-right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 40%;
+    justify-content: end;
+}
+.user-info{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+}
+.user-info:hover, .sign-out:hover{
+    background-color: var(--grey-medium);
+}
+
+.divider{
+    width: 2px;
+    height: 1.5rem;
+    background-color: var(--grey-medium);
+}
+.avatar{
+    color: var(--cyan-dark);
+    background-color: var(--cyan-light);
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.games-dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey-medium);
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    width: 8rem;
+    position: absolute;
+    right: -1rem;
+    top: 1rem;
+    transform: scale(0);
+    transition: var(--transition);
+}
+.drop{
+    transform: scale(1);
+}
+.user-name{
+    color: var(--grey-dark);
+}
+.sign-out{
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    padding: 0.3rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.sidemenu-btn{
+    display: none;
+    flex-direction: column;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    gap: 0.3rem;
+    justify-content: center;
+}
+.sidemenu-btn:hover .one{
+    color: var(--grey-dark);
+}
+.sign{
+    display: none;
+}
+.activeBtn{
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+.activeBtn .one{
+    width: 100%;
+    transform: rotate(-45deg);
+}
+.activeBtn .two{
+    display: none;
+}
+.activeBtn .three{
+    width: 100%;
+    transform: rotate(45deg);
+}
+
+.one, .two, .three{
+    height: 3px;
+    background-color: var(--black);
+    transition: 0.5s ease;
+}
+.one{
+    width: 90%;
+}
+.two{
+    width: 60%;
+}
+.three{
+    width: 30%;
+}
+.active-link{
+    color: var(--black);
+}
+.games{
+    position: relative;
+}
+.games:hover:after{
+    border-top-color: var(--black);
+}
+.games::after{
+    content: '';
+    position: absolute;
+    border-top: 5px solid var(--grey-dark);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    top: 0.65rem;
+    right: -0.8rem;
+    transition: var(--transition);
+}
+.games::before{
+    content: '';
+    position: absolute;
+    border-top: 5px solid var(--grey-light);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    right: -0.8rem;
+    top: 0.45rem;
+    z-index: 1;
+}
+
+@media screen and (max-width: 786px) {
+    .divider, .nav-items, .sign-out{
+        display: none;
+    }
+    .sign{
+        display: flex;
+    }
+    .sidemenu-btn{
+        display: flex;
+    }
+    .user-info{
+        position: relative;
+    }
+    .user-info:hover:after{
+        border-top-color: var(--black);
+    }
+    .user-info::after{
+        content: '';
+        position: absolute;
+        border-top: 5px solid var(--grey-dark);
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        bottom: 1.3rem;
+        right: -0.8rem;
+        transition: var(--transition);
+    }
+    .user-info::before{
+        content: '';
+        position: absolute;
+        border-top: 5px solid var(--grey-light);
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        right: -0.8rem;
+        bottom: 1.45rem;
+        z-index: 1;
+    }
+    .nav-right{
+        justify-content: center;
+    }
+  }
+  @media screen and (max-width: 330px) {
+    .app-name{
+        font-size: 1rem;
+    }
+    .user-name{
+        font-size: 1rem;
+    }
+    .avatar{
+        font-size: 1rem;
+    }
+  }
+  

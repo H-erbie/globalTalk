@@ -1,0 +1,37 @@
+
+.sidemenu-container{
+    display: none;
+}
+@media screen and (max-width: 786px) {
+
+.sidemenu-container{
+    height: calc(100vh - 73px);
+    position: fixed;
+    background-color: var(--grey-light);
+    top: 83px;
+    width: 100vw;
+    transition: var(--transition);
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.sidemenu-items{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+.active-sidemenu{
+    transform: scale(1);
+}
+.active-sidemenuLink{
+    color: var(--cyan-dark);
+}
+.sidemenu-link .nav-link:hover{
+    color: var(--cyan-dark);
+}
+
+}

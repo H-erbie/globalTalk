@@ -1,0 +1,120 @@
+.header-container{
+    background-color: var(--grey-light);
+    display: flex;
+    justify-content: center;
+    padding: 120px 3rem 0;
+}
+.header-right, .header-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.header-right{
+    align-items: center;
+    justify-content: center;
+}
+.header-right img{
+    width: 100%;
+    min-width: 550px;
+}
+.figures, .head-icons{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 2.5rem;
+}
+.head-icons{
+    color: var(--cyan-dark);
+}
+.game-asset{
+    transform: rotate(90deg)
+}
+.header-left{
+    width: 50%;
+}
+.sub-head{
+    color: var(--cyan-dark);
+}
+.app-motto{
+    font-family: 'Dela Gothic One', cursive;
+}
+.more-info{
+color: var(--grey-dark);
+}
+.statistics{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    
+}
+.popular-words, .mini-games{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pop-info, .mini-info{
+    display: flex;
+    align-items: center;
+}
+.statistics .divider{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+@media (max-width: 976px) {
+    .header-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 90px 3rem  0;
+    }
+    .header-left, .header-right{
+        width: 100%;
+    }
+    .app-motto{
+        margin: 0 auto;
+    }
+    .btn{
+        margin: 0 auto;
+    }
+    .statistics .divider{
+        display: flex;
+    }
+    .statistics{
+        width: max-content;
+        margin: 0 auto;
+    }
+    .figures, .head-icons{
+        font-size: 1.5rem;
+    }
+    .header-right img{
+        height: 100%;
+        max-width: 350px;
+        min-width: 50px;
+        min-height: 200px;
+    }
+    
+
+}
+@media screen and (max-width: 400px) {
+   
+    .statistics{
+        gap: 1rem;
+    }
+}
+@media (max-width: 976px) and (max-height: 675px) {
+    .header-right{
+        display: none;
+    }
+}
+@media screen and (max-width: 330px) {
+  .figures, .desc{
+    font-size: 1rem;
+  }
+  .header-container{
+    padding: 120px 1rem 0;
+  }
+  .statistics{
+    gap: 0.5rem;
+  }
+  }

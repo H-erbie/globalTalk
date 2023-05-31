@@ -1,0 +1,103 @@
+    .section-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-two-left{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .section-two-right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 2rem;
+    }
+    .section-two-left img{
+        width: 100%;
+    }
+    .cards{
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .card{
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 10rem;
+        height: 8rem;
+        position: relative;
+        display: flex;
+        align-items: end;
+    }
+    .card-info{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;    
+    }
+    .card img{
+        width: 100%;
+        position: absolute;
+        top: -3rem;
+        right: 0;
+    }
+    .megaphone img{
+        width: 70%;
+        right: 2rem;
+    }
+    .shoes{
+        background-color: var(--pink-light);
+        color: var(--pink);
+    }
+    .megaphone{
+        background-color: var(--cyan-light);
+        color: var(--cyan);
+
+    }
+    @media screen and (max-width: 786px) {
+        .section-two{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .section-two-left, .section-two-right{
+            width: 80%;
+        }
+        .section-two-left{
+            max-width: 400px;
+            min-width: 300px;
+        }
+        .section-two-right{
+            gap: 1rem;
+            padding-top: 1rem;
+        }
+        .cards{
+            width: max-content;
+            margin: 2rem auto;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .card{
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 7rem;
+            height: 5rem;
+            position: relative;
+            display: flex;
+            align-items: end;
+        }
+        .megaphone img{
+            right: -1rem;
+            top: -2rem;
+        }
+        
+    }
+    @media screen and (max-width: 330px) {
+        .card{
+            width: 6rem;
+        }
+        }

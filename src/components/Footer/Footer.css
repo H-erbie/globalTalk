@@ -1,0 +1,75 @@
+footer{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: var(--grey-light);
+    gap: 2rem;
+}
+.footer-left, .footer-right{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+.global-talk{
+    font-family: 'Dela Gothic One', cursive;
+}
+.footer-link-link, .footer-rights, .global-link {
+    color: var(--grey-dark);
+    transition: var(--transition);
+}
+.footer-link-link:hover{
+    color: var(--grey-icon);
+}
+.user-link{
+cursor: pointer;
+}
+.footer-icons{
+    color: var(--grey-icon);
+    font-size: 1.5rem;
+}
+.footer-icon{
+    transition: var(--transition);
+    cursor: pointer;
+}
+.footer-icon:hover{
+    color: var(--grey-dark);
+}
+
+.footer-left{
+    position: relative;
+    text-transform: capitalize;
+}
+.global-link{
+    text-decoration: underline;
+}
+
+.footer-left::after{
+    content: '';
+    width: 83%;
+    height: 2px;
+    background-color: var(--grey-medium);
+    position: absolute;
+    bottom: -1rem;
+}
+.footer-link-items, .users, .footer-icons{
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (max-width: 786px) {
+    .footer-link-items, .users, .footer-right{
+        flex-direction: column;
+    }
+    .footer-right{
+        margin: 0 auto;
+        width: max-content;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .copy{
+        font-size: 0.8rem;
+    }
+}
